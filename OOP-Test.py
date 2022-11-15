@@ -5,7 +5,7 @@ class Car: # Класс Машина
         self.wheels = wheels # Количество колес
         self.speed = speed   # скорость
         self.size = size # Размер
-        self.brand = brand
+        self.brand = brand # Брэнд
     def changeSpeed(self, Newspeed): # Метод изменить скорость
         self.speed = Newspeed
         print("vroom vroom")
@@ -18,7 +18,7 @@ class SUV(Car): # Класс Внедорожник
         print("Am now driving offroad ")
 
 
-class Ford(SUV):
+class Ford(SUV): # Класс форд
     def __init__(self, speed):  # инициализация
         super().__init__(speed,"Ford")
 
